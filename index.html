@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Winners Academy | Help Center</title>
+
+  <style>
+    /* Design System da Winners Academy */
+    body {
+      background-color: #0d0d0d;
+      /* Preto Profundo */
+      color: #ffffff;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 25px;
+    }
+
+    .app-container {
+      background: #1a1a1a;
+      /* Cinza Tecnológico */
+      padding: 30px 25px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+      /* Brilho Neon */
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #00ff88;
+      /* Verde Winners */
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #aaaaaa;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      text-align: left;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      color: #00ff88;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      background: #2a2a2a;
+      border: 1px solid #333;
+      border-radius: 5px;
+      color: white;
+      box-sizing: border-box;
+      font-size: 14px;
+      resize: vertical;
+      transition: border-color 0.3s;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #00ff88;
+      outline: none;
+    }
+
+    button {
+      background: linear-gradient(45deg, #00ff88, #00cc6a);
+      color: black;
+      font-weight: bold;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: transform 0.2s;
+      font-size: 16px;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="app-container">
+    <h1>🏛️ Winners Support</h1>
+    <p>Missão Operação Fluência</p>
+
+    <form action="https://script.google.com/macros/s/AKfycbzne5aevcNKbUDcfxZ9Ozw8k58TGeS761FRgsWRbk-gPNs9dioGODQf0NMm8aJSCLqz/exec
+" method="POST" target="_blank">
+
+      <label for="name">NOME DO EXPLORADOR:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="level">NÍVEL ATUAL:</label>
+      <select id="level" name="level" required>
+        <option value="Explorador">Explorador</option>
+        <option value="Construtor">Construtor</option>
+        <option value="Winner">Winner</option>
+      </select>
+
+      <label for="message">SUA DÚVIDA TÉCNICA:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">ENVIAR PARA O LÍDER 🚀</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
